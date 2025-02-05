@@ -1,0 +1,30 @@
+
+.inputComponent {
+    background: grey;
+    padding: 2rem;
+    color: white;
+}
+
+.inputComponent label {
+    color: gold;
+    padding-right: 10px;
+}
+
+.inputComponent input {
+    background: black;
+    color: yellowgreen;
+    font-size: 20px;
+}
+
+.inputComponent p {
+    background: darkblue;
+    padding: 0.5rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.filteredList {
+    position: absolute;
+    padding: 1rem;
+    background: grey;
+}

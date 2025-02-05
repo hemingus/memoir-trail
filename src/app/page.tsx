@@ -1,10 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import FilterSearch from "./components/FilterSearch";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+        <FilterSearch />
         <Image
           className={styles.logo}
           src="/next.svg"
@@ -17,7 +19,7 @@ export default function Home() {
           <li>
             Get started by editing <code>src/app/page.tsx</code>.
           </li>
-          <li>Save and see your changes instantly.</li>
+          <li>Memoir Trail</li>
         </ol>
 
         <div className={styles.ctas}>
