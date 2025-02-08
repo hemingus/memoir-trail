@@ -1,0 +1,28 @@
+.memoirCardContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.memoirCard {
+    min-width: 300px;
+    max-width: 400px;
+    height: auto;
+    padding: 20px;
+    display: block;
+    color: white;
+    background: black;
+    border-radius: 20px;
+}
+
+.memoirCard h2 {
+    color: gold;
+}
+
+.memoirCard h3 {
+    color: greenyellow;
+}
