@@ -1,12 +1,16 @@
+"use client"
+
 import Image from "next/image";
 import styles from "./page.module.css";
 import FilterSearch from "./components/FilterSearch";
 import MemoirPage from "./components/Memoir/MemoirPage"
+import OpenAItest from "./components/OpenAItest";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+        <OpenAItest />
         <MemoirPage />
         <FilterSearch />
         <Image

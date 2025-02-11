@@ -6,6 +6,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+    background: lightblue;
 }
 
 .memoirCard {
@@ -15,7 +16,7 @@
     padding: 20px;
     display: block;
     color: white;
-    background: grey;
+    background: rgb(20, 10, 50);
     border-radius: 20px;
 }
 
