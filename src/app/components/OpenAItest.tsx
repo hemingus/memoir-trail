@@ -4,36 +4,44 @@ import OpenAI from "openai";
 import { useState, useEffect} from 'react'
 
 const OpenAItest = () => {
-    const [apiText, setApiText] = useState<string>("")
-    const [loading, setLoading] = useState(true)
+    const [apiText, setApiText] = useState<string>("Waiting for input...")
+    const [loading, setLoading] = useState(false)
+    const [word, setWord] = useState<string>("")
 
-    useEffect(() => {
-        console.log("OPENAI_API_KEY: ", process.env.NEXT_PUBLIC_OPENAI_API_KEY)
-        const fetchCompletion = async () => {
-            const openai = new OpenAI({
-              apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
+    const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setWord(event.target.value);
+    }
 
-              dangerouslyAllowBrowser: true, // Required for frontend usage
-            });
-      
-            try {
-              const completion = await openai.chat.completions.create({
-                model: "gpt-3.5-turbo",
-                messages: [{ role: "user", content: "Write a haiku about AI" }],
-              });
-      
-              setApiText(completion.choices[0].message.content || "No response received.");
-            } catch (error) {
-              console.error("Error fetching data:", error);
-              setApiText("Failed to fetch response.");
-            }
-            setLoading(false)
-          };
-      
-          fetchCompletion();
-    }, [])
+    const fetchCompletion = async () => {
+        const openai = new OpenAI({
+          apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
+
+          dangerouslyAllowBrowser: true, // Required for frontend usage
+        });
+  
+        try {
+          const completion = await openai.chat.completions.create({
+            model: "gpt-4o",
+            messages: [{ role: "user", content: `Write a haiku about ${word}` }],
+          });
+  
+          setApiText(completion.choices[0].message.content || "No response received.");
+        } catch (error) {
+          console.error("Error fetching data:", error);
+          setApiText("Failed to fetch response.");
+        }
+        setLoading(false)
+      };
+  
     return (
         <div>
+            <input
+            type="text"
+            onChange={handleInputChange}
+            value={word}
+            placeholder="input text..."
+            />
+            {loading ? <h3>Loading...</h3> : <button onClick={fetchCompletion}>Submit</button>}
             <h3>API response:</h3>
             <p>{loading ? "loading..." : apiText}</p>
         </div>
