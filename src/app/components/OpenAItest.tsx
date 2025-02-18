@@ -22,7 +22,7 @@ const OpenAItest = () => {
         try {
           const completion = await openai.chat.completions.create({
             model: "gpt-4o",
-            messages: [{ role: "user", content: `Write a haiku about ${word}` }],
+            messages: [{ role: "user", content: `${word} (respond like a overexcited teenage girl in max 50 words)` }],
           });
   
           setApiText(completion.choices[0].message.content || "No response received.");
