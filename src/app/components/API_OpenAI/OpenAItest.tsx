@@ -2,6 +2,7 @@
 
 import OpenAI from "openai";
 import { useState, useEffect} from 'react'
+import "./OpenAItest.css"
 
 const OpenAItest = () => {
     const [apiText, setApiText] = useState<string>("Waiting for input...")
@@ -34,16 +35,17 @@ const OpenAItest = () => {
       };
   
     return (
-        <div>
+        <div className="openAItest-container">
             <input
+            className="openAItest-input"
             type="text"
             onChange={handleInputChange}
             value={word}
             placeholder="input text..."
             />
-            {loading ? <h3>Loading...</h3> : <button onClick={fetchCompletion}>Submit</button>}
+            {loading ? <h3>Loading...</h3> : <button className="openAItest-button" onClick={fetchCompletion}>Submit</button>}
             <h3>API response:</h3>
-            <p>{loading ? "loading..." : apiText}</p>
+            <p className="openAItest-response">{loading ? "loading..." : apiText}</p>
         </div>
       )
 }

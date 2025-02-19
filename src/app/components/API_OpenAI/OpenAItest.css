@@ -1,0 +1,34 @@
+.openAItest-container {
+    background: darkgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.openAItest-input {
+    background: black;
+    height: 3rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.openAItest-button {
+    background: radial-gradient(green, yellowgreen);
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.openAItest-button:hover {
+    background: radial-gradient(green, greenyellow);
+
+}
+
+.openAItest-response {
+    background: linear-gradient(grey -100%, black 50%, grey 200%);
+    color: white;
+    padding: 1rem;
+}
+

@@ -1,7 +1,7 @@
 
 import MemoirCard from "./MemoirCard"
 import { Memoir, memoir_data } from "./Memoir"
-import OpenAItest from "../OpenAItest"
+import OpenAItest from "../API_OpenAI/OpenAItest"
 import "./Memoir.css"
 
 const memoirs = memoir_data

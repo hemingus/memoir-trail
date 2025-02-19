@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import FilterSearch from "./components/FilterSearch";
 import MemoirPage from "./components/Memoir/MemoirPage"
-import OpenAItest from "./components/OpenAItest";
+import OpenAItest from "./components/API_OpenAI/OpenAItest";
 
 export default function Home() {
   return (
