@@ -45,7 +45,7 @@ const OpenAItest = () => {
             />
             {loading ? <h3>Loading...</h3> : <button className="openAItest-button" onClick={fetchCompletion}>Submit</button>}
             <h3>API response:</h3>
-            <p className="openAItest-response">{loading ? "loading..." : apiText}</p>
+            <article className="openAItest-response">{loading ? "loading..." : apiText}</article>
         </div>
       )
 }
