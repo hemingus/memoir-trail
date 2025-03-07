@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Memoir } from "./Memoir"; // Assuming Memoir type is defined
+import './CreateMemoir.css'
 
 const CreateMemoir = ({ onAdd }: { onAdd: (memoir: Memoir) => void }) => {
   const [title, setTitle] = useState("");
@@ -39,9 +40,11 @@ const CreateMemoir = ({ onAdd }: { onAdd: (memoir: Memoir) => void }) => {
   };
 
   return (
-    <div className="memoir-form">
+    <div className="createMemoir-container">
       <h2>Create a New Memoir</h2>
-      <form onSubmit={handleSubmit}>
+      <form 
+      className="createMemoir-container"
+      onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Title"
