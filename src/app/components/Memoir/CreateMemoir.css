@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-self: center;
+    gap: 10px;
     padding: 20px;
     background: grey;
 }
@@ -17,15 +18,26 @@
 }
 
 .createMemoir-container input {
-    background: darkred;
+    background: darkgreen;
     color: pink;
     font-family: arial;
     font-size: 2rem;
 }
 
 .createMemoir-container textarea {
-    background: darkred;
+    background: darkgreen;
     color: pink;
     font-family: arial;
     font-size: 2rem;
+}
+
+.createMemoir-container button {
+    background: radial-gradient(green, yellowgreen);
+    padding: 0.5rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.createMemoir-container button:hover {
+    background: radial-gradient(green, greenyellow);
 }
