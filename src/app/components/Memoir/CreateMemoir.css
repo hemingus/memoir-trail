@@ -41,3 +41,8 @@
 .createMemoir-container button:hover {
     background: radial-gradient(green, greenyellow);
 }
+
+.createMemoir-container h2 {
+    color: yellowgreen;
+    filter: drop-shadow(3px 3px 0 black);
+}

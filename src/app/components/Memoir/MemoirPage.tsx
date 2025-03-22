@@ -18,8 +18,8 @@ const MemoirPage = () => {
     return (
     <div>
         <OpenAItest />
+        <CreateMemoir onAdd={addMemoir} />
         <div className="memoirCardContainer">
-            <CreateMemoir onAdd={addMemoir} />
             {memoirs.map((memoir) => (
                 <MemoirCard 
                     key={memoir.id}
