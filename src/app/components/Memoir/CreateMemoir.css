@@ -25,6 +25,8 @@
 }
 
 .createMemoir-container textarea {
+    width: min(800px, 100%);
+    height: 400px;
     background: darkgreen;
     color: pink;
     font-family: arial;
@@ -43,6 +45,7 @@
 }
 
 .createMemoir-container h2 {
+    align-self: center;
     color: yellowgreen;
     filter: drop-shadow(3px 3px 0 black);
 }

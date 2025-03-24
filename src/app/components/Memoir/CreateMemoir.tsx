@@ -52,12 +52,6 @@ const CreateMemoir = ({ onAdd }: { onAdd: (memoir: Memoir) => void }) => {
           onChange={(e) => setTitle(e.target.value)}
           required
         />
-        <textarea
-          placeholder="Description"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-          required
-        />
         <input
           type="number"
           placeholder="Year (required)"
@@ -80,6 +74,12 @@ const CreateMemoir = ({ onAdd }: { onAdd: (memoir: Memoir) => void }) => {
           onChange={(e) => setDay(e.target.value ? Number(e.target.value) : "")}
           min={1}
           max={31}
+        />
+        <textarea
+          placeholder="Description"
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+          required
         />
         <button type="submit">Add Memoir</button>
       </form>
