@@ -4,6 +4,7 @@ import { Memoir, memoir_data } from "./Memoir"
 import { useState } from "react"
 import OpenAItest from "../API_OpenAI/OpenAItest"
 import "./Memoir.css"
+import "./MemoirPage.css"
 import CreateMemoir from "./CreateMemoir"
 
 const memos = memoir_data
@@ -16,7 +17,8 @@ const MemoirPage = () => {
       };
 
     return (
-    <div>
+    <div className="memoirpage-container">
+        <h1 className="memoirPage-header">Memoirs</h1>
         <OpenAItest />
         <CreateMemoir onAdd={addMemoir} />
         <div className="memoirCardContainer">

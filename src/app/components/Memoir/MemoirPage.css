@@ -1,0 +1,13 @@
+.memoirpage-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: black;
+}
+
+.memoirPage-header {
+    color: indigo;
+    filter: drop-shadow(0 0 5px white);
+}
