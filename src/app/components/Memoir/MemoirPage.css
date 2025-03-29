@@ -8,6 +8,13 @@
 }
 
 .memoirPage-header {
-    color: indigo;
-    filter: drop-shadow(0 0 5px white);
+    color: white;
+    filter: drop-shadow(0 0 5px indigo);
+    font-size: 4rem;
+    padding: 1rem;
+    border: solid;
+    border-radius: 1rem;
+    background: linear-gradient(to right, darkblue , purple);
+    border-color: silver;
+    margin-top: 1rem;
 }
