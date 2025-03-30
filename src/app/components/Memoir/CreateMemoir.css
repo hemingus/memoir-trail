@@ -18,7 +18,7 @@
 }
 
 .createMemoir-container input {
-    background: darkgreen;
+    background: linear-gradient(to right, darkblue, darkred);
     color: pink;
     font-family: arial;
     font-size: 2rem;
@@ -27,7 +27,7 @@
 .createMemoir-container textarea {
     width: min(800px, 100%);
     height: 400px;
-    background: darkgreen;
+    background: linear-gradient(to right, darkblue, darkred);
     color: pink;
     font-family: arial;
     font-size: 2rem;
@@ -46,6 +46,6 @@
 
 .createMemoir-container h2 {
     align-self: center;
-    color: yellowgreen;
+    color: skyblue;
     filter: drop-shadow(3px 3px 0 black);
 }
