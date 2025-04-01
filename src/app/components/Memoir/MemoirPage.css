@@ -1,6 +1,6 @@
 .memoirpage-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -8,6 +8,7 @@
 }
 
 .memoirPage-header {
+    grid-column: span 12;
     color: white;
     filter: drop-shadow(0 0 5px indigo);
     font-size: 4rem;
