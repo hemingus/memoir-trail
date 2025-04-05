@@ -8,10 +8,11 @@
 }
 
 .memoirPage-header {
-    grid-column: span 12;
+    grid-column: 1 / -1;
     color: white;
     filter: drop-shadow(0 0 5px indigo);
     font-size: 4rem;
+    text-align: center;
     padding: 1rem;
     border: solid;
     border-radius: 1rem;

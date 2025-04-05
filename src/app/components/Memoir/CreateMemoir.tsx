@@ -43,7 +43,7 @@ const CreateMemoir = ({ onAdd }: { onAdd: (memoir: Memoir) => void }) => {
     <div className="createMemoir-container">
       <h2>Create a New Memoir</h2>
       <form 
-      className="createMemoir-container"
+      className="createMemoir-form"
       onSubmit={handleSubmit}>
         <input
           type="text"

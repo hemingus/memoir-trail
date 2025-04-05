@@ -1,5 +1,6 @@
 
 .inputComponent {
+    grid-column: span 6;
     background: grey;
     padding: 2rem;
     color: white;

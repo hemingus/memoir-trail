@@ -10,7 +10,7 @@ import CreateMemoir from "./CreateMemoir"
 const memos = memoir_data
 
 const MemoirPage = () => {
-    const [memoirs, setMemoirs] = useState<Memoir[]>([memos[0]])
+    const [memoirs, setMemoirs] = useState<Memoir[]>(memos)
 
     const addMemoir = (memoir: Memoir) => {
         setMemoirs([...memoirs, memoir]);
@@ -19,8 +19,8 @@ const MemoirPage = () => {
     return (
     <div className="memoirpage-container">
         <h1 className="memoirPage-header">Memoirs</h1>
-        <OpenAItest />
         <CreateMemoir onAdd={addMemoir} />
+        <OpenAItest />
         <div className="memoirCardContainer">
             {memoirs.map((memoir) => (
                 <MemoirCard 

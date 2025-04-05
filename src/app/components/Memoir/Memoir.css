@@ -1,22 +1,22 @@
 .memoirCardContainer {
+    padding: 2rem;
+    grid-column: span 8;
     height: 100%;
-    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     flex-wrap: wrap;
     gap: 10px;
-    background: lightblue;
+    background: linear-gradient(to top right, blue -100%, skyblue, indigo 200%);
 }
 
 .memoirCard {
-    min-width: 300px;
-    max-width: 400px;
+    width: 100%;
     height: auto;
     padding: 20px;
     display: block;
     color: white;
-    background: rgb(20, 10, 50);
+    background: linear-gradient(to top right, indigo -100%, black, purple 200%);
     border-radius: 20px;
 }
 

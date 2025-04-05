@@ -1,36 +1,47 @@
 .createMemoir-container {
+    grid-column: span 6;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-self: center;
     gap: 10px;
     padding: 20px;
-    background: grey;
+    background: linear-gradient(to top right, darkblue -100%, black, darkblue 200%);
+    border: solid white 5px;
+    border-radius: 0.5rem;
 }
 
 .createMemoir-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
     align-self: center;
     padding: 10px;
     background: skyblue;
+    border-radius: 0.5rem;
 }
 
 .createMemoir-container input {
-    background: linear-gradient(to right, darkblue, darkred);
-    color: pink;
+    background: linear-gradient(to top right, indigo, black);
+    color: white;
     font-family: arial;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: solid white 1px;
+    border-radius: 0.5rem;
 }
 
 .createMemoir-container textarea {
     width: min(800px, 100%);
     height: 400px;
-    background: linear-gradient(to right, darkblue, darkred);
-    color: pink;
+    background: linear-gradient(to top right, indigo, black);
+    color: white;
     font-family: arial;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: solid white 1px;
+    border-radius: 0.5rem;
 }
 
 .createMemoir-container button {
@@ -38,6 +49,7 @@
     padding: 0.5rem;
     font-weight: 800;
     cursor: pointer;
+    border-radius: 0.5rem;
 }
 
 .createMemoir-container button:hover {
