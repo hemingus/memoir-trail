@@ -1,14 +1,14 @@
 "use client"
 
-import FilterSearch from "../components/FilterSearch";
 import MemoirPage from "../components/Memoir/MemoirPage"
 
 export default function Home() {
   return (
     <div>
+      <h1>Memoir Trail</h1>
       <main>
-        <MemoirPage />
-        <FilterSearch />
+        Welcome! <br/>
+        Gather your memories to look back in a historic setting.
       </main>
     </div>
   );
